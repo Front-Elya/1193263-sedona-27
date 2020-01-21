@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Эльвира Балашова](https://up.htmlacademy.ru/htmlcss/27/user/1193263).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
