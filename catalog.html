@@ -20,7 +20,34 @@
         <h1 class="visually-hidden">Гостиницы</h1>
         <section>
           <h2 class="visually-hidden">Фильтрационная форма</h2>
-          <!--здесь будет фильтрационная форма-->
+          <form class="#" method="post" action="#" oninput="dailycostoutput.value=dailycost.value">
+            <div>
+              <h3>Инфраструктура:</h3>
+              <input type="checkbox" id="swimming-pool" checked>
+              <label for="swimming-pool">Бассейн</label>
+              <input type="checkbox" id="parking">
+              <label for="parking">Парковка</label>
+              <input type="checkbox" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </div>
+            <div>
+              <h3>Тип жилья:</h3>
+              <input type="checkbox" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+              <input type="checkbox" id="motel" checked>
+              <label for="motel">Мотель</label>
+              <input type="checkbox" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </div>
+            <div>
+              <h3>Стоимость в сутки (Р):</h3>
+              <span>От 0</span>
+              <span>До</span>
+              <output name="dailycostoutput"></output>
+              <input type="range" min="0" max="3000" step="1000" name="dailycost">
+            </div>
+            <button type="submit">Показать</button>
+          </form>
         </section>
          <section>
           <h2 class="visually-hidden">Шапка выборки гостиниц</h2>
@@ -97,9 +124,9 @@
         </div>
         <div>
           <ul>
-            <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="лого-Твиттер"></a></li>
-            <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="лого-Фэйсбук"></a></li>
-            <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="лого-Ютьюб"></a></li>
+            <li><a href="#" aria-label="Твиттер"></a></li>
+            <li><a href="#" aria-label="Фэйсбук"></a></li>
+            <li><a href="#" aria-label="Ютьюб"></a></li>
           </ul>
         </div>
         <div>
