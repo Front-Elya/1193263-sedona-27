@@ -115,6 +115,7 @@ p{
 
 .features h3{
     text-align: center;
+    line-height: 26px;
 }
 
 .feutures-headline{
@@ -209,6 +210,7 @@ p{
     height: 256px;
 
     text-align: center;
+    line-height: 26px;
 }
 
 .sale-banner{
@@ -225,7 +227,9 @@ p{
     line-height: 36px;
     font-weight: 700;
 }
-
+.sale-banner p:last-child{
+    line-height: 24px;
+}
 /*Форма скрыта согласно заданию*/
 form{
     display: none;
