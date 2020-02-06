@@ -12,8 +12,13 @@ body{
     background-color: #ffffff;
 }
 
+/*Форма скрыта согласно заданию*/
+.search-form{
+    display: none;
+}
+
 a {
-    color: black;
+    color:#000000;
     text-decoration: none;
 }
 
@@ -26,15 +31,41 @@ a:active{
 a:focus{
     color: rgba(0, 0, 0, 0.3);
 }
-h3{
-    font-size: 21px;
-    line-height: 21px;
-}
 
-p{
+.feutures-1 p,
+.advices-list p,
+.feutures-2 p,
+.feutures-list p,
+.hotels p{
     line-height: 21px;
     font-weight: 400;
 }   
+.sorting-searh p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.features h3,
+.sorting-searh h3,
+.hotels h3,
+.contacts p{
+    font-size: 21px;
+    line-height: 26px;
+}
+.features h3,
+.contacts p{
+    text-align: center;
+    font-weight: 700;
+}
+
+.feutures-1-text h3,
+.advices-list h3,
+.feutures-2-text h3,
+.feutures-list h3{
+    font-size: 21px;
+    line-height: 21px;
+}
 
 .site-navigation,
 .advices-list,
@@ -111,11 +142,6 @@ p{
     height: 216px;
 
     background-color: #ffffff;
-}
-
-.features h3{
-    text-align: center;
-    line-height: 26px;
 }
 
 .feutures-headline{
@@ -230,10 +256,6 @@ p{
 .sale-banner p:last-child{
     line-height: 24px;
 }
-/*Форма скрыта согласно заданию*/
-form{
-    display: none;
-}
 
 .footer{
     width: 1200px;   
@@ -246,9 +268,6 @@ form{
 .contacts{
     width: 400px;
     height: 120px;
-
-    font-size: 21px;
-    font-weight: 700;
 }
 
 .social{
@@ -290,6 +309,25 @@ a.creator-button:focus{
     background-repeat: no-repeat;
 }
 
+.filtration-form legend{
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.filtration-form label,
+.filtration-form span,
+.filtration-form button{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.filtration-form button{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
 .sorting-search p{
     font-size: 12px;
     line-height: 18px;
