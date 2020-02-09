@@ -288,6 +288,10 @@ a:focus{
     line-height: 24px;
 }
 
+iframe{
+    border: 0px;
+    box-shadow: 0px;
+}
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -301,26 +305,66 @@ footer{
     background-color: #f2f2f2;
     opacity: 0.9;
 }
-
-
-a.social-button{
-    color: #ffffff;
+.social{
+    width: 150px;
+}
+.social-list {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.twitter{
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.facebook{
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/fb-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.youtube{
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social-button{
     background-color: #81b3d2;
 }
-a.social-button:hover{
+.social-button:hover{
     background-color:#669ec0;
 }
-a.social-button:focus{
+.social-button:focus{
     background-color: #5496bd;
 }
 
-a.creator-button {
-    color: #000000;
+.contacts p{
+    text-align: left;
 }
-a.creator-button:hover{
+
+.creator{
+    width: 197px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.creator p:first-child{
+    font-weight: 400;
+}
+
+.creator-button:hover{
     color: #81b3d2;
 }
-a.creator-button:focus{
+.creator-button:focus{
     color: #bdbbbc;
 }
 
