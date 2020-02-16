@@ -88,108 +88,111 @@ a:focus{
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 0 0 10px -5px #000000;
 }
 
 .main-header{
+    width: inherit; 
+    position: relative;
+    top:-15px;
+
     background-image: url(../img/background-photo.jpg);
     background-color: #ffffff ;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -12px;
 }
 .main-navigation{
     display: flex;
     flex-wrap: wrap;
+
+    width: inherit;
 }
+
 .site-navigation{
-    margin: 0px;
-    padding: 0px;
-    width: 1200px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0px;
+
+    width: inherit;
 
     background-color: #ffffff;
 }
 .site-navigation li{
-    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding-top: 16px;
     padding-bottom: 15px;
 }
-.site-navigation li:first-child{
-    margin-left: 72px;
+
+.part-hidden{
+    min-width: 255px;
+    padding:0;
 }
-.site-navigation li:nth-child(2){
-    margin-left: 147px;
-}
-.site-navigation li:nth-child(3){
-    margin-left: 388px;
-}
-.site-navigation li:last-child{
-    margin-left: 161px;
-}
+
 .main-header-logo{
-    margin-left: 529px;
-    margin-top: -60px;
-    padding: 0px;
+    position: relative;
+    margin: -71px auto;
 }
+
 .banner{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: -3px;
+    margin-top: 1px;
 }
 .banner-welcome{
     width: 459px;
     height: 353px;
-   
+
     background-image: url(../img/intro-welcome.svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-polygon{
     width: 1200px;
     height: 59px;
-
-    margin-bottom: -2px;
-    margin-top: 22px;
-    padding: 0px;
+    margin-top:22px;
     background-image: url(../img/intro-mask.svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 .features{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: #ffffff;
+    padding: 15px 0 25px 0;
+    margin-top: -2px;
+    background-color: #ffffff
+
 }
 .features-banner{
-    width: 489px;
+    margin-top: -20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+    text-align: center;
 }
-.features-banner h3,
-.features-banner p{
-    padding: 0px;
-    margin: 0px;
-}
-.features-banner p{
-    margin-top: 25px;
-    margin-bottom: 50px;
 
+.features-list{
     color: #333333;
     font-weight: 400;
+    margin-top: 26px;
 }
 
 .container{
+    width:inherit;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
 }
 
 .feutures-1 {
     display: flex;
     
-    padding: 0px;
     margin-top: -63px;
 
     background-color: #81b3d2; 
@@ -197,32 +200,44 @@ a:focus{
 .feutures-1-text{   
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
 
-    padding-top: 30px;
-    width: 400px;
+    text-align: center;
 
     color:#ffffff;
-    text-align: center;
-    
+}
+.feutures-1-text h3{
+    padding: 25px 100px 0px 100px;
+}
+.feutures-1-text p{
+    padding: 0px 54px;
+    margin-top: 1px;
+}
+.feutures-1-text p:last-of-type{
+    padding-top:9px;
 }
 
 .advices-list{
+    width: inherit;
+    padding:58px 0;
+    margin:0;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: -9px;
-    text-align: center;
-    
-    padding: 60px 20px 69px 20px;
 
     background-color: #ffffff;
 }
 
 .advices-list li{
+    width:700px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: baseline;
+    align-content: space-between;
+    align-items: center;
+
+    margin:0 48px;
+
+    text-align: center;
 }
 
 .feutures-2 {
@@ -370,7 +385,7 @@ footer{
 
 /*КАТАЛОГ*/
 
-.filtration-form legend{
+legend{
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
@@ -386,9 +401,11 @@ footer{
 }
 
 .filtration-form button{
+    width: 133px;
     background-color: transparent;
     border: 2px solid #ffffff;
 }
+
 .sorting-search p{
     font-size: 12px;
     line-height: 18px;
@@ -439,36 +456,126 @@ a.button.booked:focus{
 
 
 .catalog{
+    width:inherit;
+
     background-image: url(../img/filter-background.jpg);
     background-color: #ffffff ;
     background-repeat: no-repeat;
 }
+.filtration-form{
+    width:inherit;
+}
+.filtration-form-hotel{
+    width: inherit;
 
-/*фильтрационная форма*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.filtration-form-hotel-block1{
+    width: 345px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filtration-form-hotel-block2{
+    width: 314px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.infrastructure-block,
+.housing-block,
+.cost-block{
+    display: flex;
+    border: none;
+}
+
 
 .container-catalog{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-/*временно*/
-    margin-top: -130px;
 }
 
+
 .searching-headline{
-    display: flex;
-    flex-direction: column;
-}
-.sorting-searh{
+    width:inherit;
+    padding:0;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+
     
 }
+.sorting-searh{
+    width: auto;
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    position: relative;
+    left:-220px;
+    
+}
+.sorting-searh p{
+    margin-left:30px;
+
+}
 .sorting-list{
+    width:300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sorting-button{
+    position: relative;
+    right:-250px;
+}
+.sorting-button button{
+    border:0;
+    background-color: transparent;
+}
+.hotels{
+    width:inherit;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.hotels div
+.hotels-info{
+    display:flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+.hotels-rating{
+    display:flex;
+    flex-direction: column;
+}
+
+.hotels-1,
+.hotels-2,
+.hotels-3{
+    width: inherit;
+    padding:20px 50px;
+
     display: flex;
     flex-direction: row;
 }
 
 .footer-catalog{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
