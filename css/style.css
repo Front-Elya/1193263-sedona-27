@@ -1,7 +1,7 @@
 body{ 
-    margin: 0;
+    margin:0;
     padding: 0;
-
+    
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -16,6 +16,8 @@ body{
 .search-form{
     display: none;
 }
+
+/*Текстовые стили*/
 
 a {
     color:#000000;
@@ -32,10 +34,10 @@ a:focus{
     color: rgba(0, 0, 0, 0.3);
 }
 
-.feutures-1 p,
+.features-1 p,
 .advices-list p,
-.feutures-2 p,
-.feutures-list p,
+.features-2 p,
+.features-list p,
 .hotels p{
     line-height: 21px;
     font-weight: 400;
@@ -59,21 +61,23 @@ a:focus{
     font-weight: 700;
 }
 
-.feutures-1-text h3,
+.features-1-text h3,
 .advices-list h3,
-.feutures-2-text h3,
-.feutures-list h3{
+.features-2-text h3,
+.features-list h3{
     font-size: 21px;
     line-height: 21px;
 }
 
 .site-navigation,
 .advices-list,
-.feutures-list,
+.features-list,
 .social-list,
 .sorting-list{
     list-style: none;
 }
+
+/*Стили разметки*/
 
 .visually-hidden{
     visibility: hidden;
@@ -81,216 +85,166 @@ a:focus{
 .background-substrate{
     width: 1280px;
 
+    margin: 0 auto;
+
     background-color: #f2f2f2;
 }
 
 .center-block{
     width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: thistle;
     box-shadow: 0 0 10px -5px #000000;
 }
 
 .main-header{
-    width: inherit; 
-    position: relative;
-    top:-15px;
+    width: 1200px;
+    height: 564px;
 
     background-image: url(../img/background-photo.jpg);
-    background-color: #ffffff ;
+    background-position-y: -26px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -12px;
+    background-size: 100%;
 }
-.main-navigation{
-    display: flex;
-    flex-wrap: wrap;
 
+.main-navigation{
     width: inherit;
 }
 
 .site-navigation{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    margin: 0px;
     padding: 0px;
 
-    width: inherit;
+    display: flex;
+    flex-direction: row;
 
     background-color: #ffffff;
 }
 .site-navigation li{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-around;
-    padding-top: 16px;
-    padding-bottom: 15px;
+   margin:16px 0px;
+   padding: 0px;
 }
-
-.part-hidden{
-    min-width: 255px;
-    padding:0;
+.site-navigation li:first-of-type{
+    padding: 0px 74px 0px 72px;
+}
+.site-navigation li:nth-of-type(2){
+    margin-right: 244px;
+    padding:0px 68px 0px 73px;
+}
+.site-navigation li:nth-of-type(3){
+    padding:0px 73px 0px 77px;
+}
+.site-navigation li:last-of-type{
+    padding: 0px 72px 0px 91px;
 }
 
 .main-header-logo{
     position: relative;
-    margin: -71px auto;
+    left: 529px;
+    top: -57px;
 }
 
 .banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1px;
+    margin:0;
+    padding: 0;
 }
 .banner-welcome{
     width: 459px;
     height: 353px;
+
+    position: relative;
+    top:-63px;
+    left:370px;
 
     background-image: url(../img/intro-welcome.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .banner-polygon{
-    width: 1200px;
+    width: relative;
     height: 59px;
-    margin-top:22px;
+
+    position: relative;
+    top:-42px;
+    
     background-image: url(../img/intro-mask.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .features{
-    padding: 15px 0 25px 0;
-    margin-top: -2px;
-    background-color: #ffffff
-
+    background-color: firebrick;
 }
-.features-banner{
-    margin-top: -20px;
-    margin-left: 300px;
-    margin-right: 300px;
-    
-    text-align: center;
+.features-banner h3{
+    margin:0 380px;
 }
 
 .features-list{
+    margin: 30px 355px 0 356px;
+    padding-bottom: 0px;
     color: #333333;
     font-weight: 400;
-    margin-top: 26px;
 }
 
 .container{
-    width:inherit;
-
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
-
-.feutures-1 {
+.features-1 {
     display: flex;
-    
-    margin-top: -63px;
+    flex-direction: row;
+
+    padding:0px;
+    margin:0px;
 
     background-color: #81b3d2; 
 }
-.feutures-1-text{   
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-
+.features-1-text{    
     color:#ffffff;
 }
-.feutures-1-text h3{
-    padding: 25px 100px 0px 100px;
+.features-1-text h3{
+   
 }
-.feutures-1-text p{
-    padding: 0px 54px;
-    margin-top: 1px;
+.features-1-text p{
+   
 }
-.feutures-1-text p:last-of-type{
-    padding-top:9px;
+.features-1-text p:last-of-type{
+    
+}
+.features-1-image{
+
 }
 
 .advices-list{
-    width: inherit;
-    padding:58px 0;
-    margin:0;
-    display: flex;
-    flex-direction: row;
-
     background-color: #ffffff;
 }
 
 .advices-list li{
-    width:700px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    align-content: space-between;
-    align-items: center;
-
-    margin:0 48px;
-
-    text-align: center;
+    
 }
 
-.feutures-2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -14px;
+.features-2 {
+    
     
     background-color: #81b3d2;
 }
-.feutures-2-text{  
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
+.features-2-text{  
+    
 
-    text-align: center;
-    padding-top: 25px;
-
-    width: 400px;
     color:#ffffff;
 }
-.feutures-list{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
 
-    padding:0px;
-    margin: 0px;
-    margin-top: -9px;
-
-    background-color:#eeeeee;
+.features-list li{
+    
 }
-
-.feutures-list li{
-    width: 208px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    margin: 0px 96px;
-}
-.feutures-list h3,
-.feutures-list p:first-child,
-.feutures-list p:last-child{
-    align-self: baseline;
+.features-list h3,
+.features-list p:first-child,
+.features-list p:last-child{
+    
 }
 
 .sale-banner{
-    width: 434px;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 52px;
-    text-align: center;
+    
 
 }
 .sale-banner p:first-child{
@@ -308,15 +262,7 @@ iframe{
     box-shadow: 0px;
 }
 footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
 
-    margin-top: -120px;
-    padding: 0px 80px;
     background-color: #f2f2f2;
     opacity: 0.9;
 }
