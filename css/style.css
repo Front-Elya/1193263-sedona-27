@@ -48,7 +48,7 @@ a:focus{
     font-weight: 400;
 }
 
-.features h3,
+
 .sorting-searh h3,
 .hotels h3,
 .contacts p{
@@ -69,6 +69,13 @@ a:focus{
     line-height: 21px;
 }
 
+.features-1-text p,
+.advices-list p,
+.features-2-text p,
+.features-list p{
+    font-size: 14px;
+    line-height: 21px;
+}
 .site-navigation,
 .advices-list,
 .features-list,
@@ -80,10 +87,14 @@ a:focus{
 /*Стили разметки*/
 
 .visually-hidden{
-    visibility: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width:1px;
+    height:1px;
+    margin:-1px;
 }
 .background-substrate{
-    width: 1280px;
+    width: auto;
 
     margin: 0 auto;
 
@@ -93,7 +104,7 @@ a:focus{
 .center-block{
     width: 1200px;
     margin: 0 auto;
-    background-color: thistle;
+    background-color:#ffffff;
     box-shadow: 0 0 10px -5px #000000;
 }
 
@@ -117,6 +128,7 @@ a:focus{
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     background-color: #ffffff;
 }
@@ -124,6 +136,8 @@ a:focus{
    margin:16px 0px;
    padding: 0px;
 }
+
+
 .site-navigation li:first-of-type{
     padding: 0px 74px 0px 72px;
 }
@@ -145,40 +159,49 @@ a:focus{
 }
 
 .banner{
-    margin:0;
+    margin:0px;
     padding: 0;
+    position: relative;
+    top: -5px;
 }
 .banner-welcome{
     width: 459px;
     height: 353px;
 
     position: relative;
-    top:-63px;
     left:370px;
+    margin-bottom: 22px;
 
     background-image: url(../img/intro-welcome.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .banner-polygon{
-    width: relative;
+    width: 1200px;
     height: 59px;
 
     position: relative;
-    top:-42px;
-    
+    bottom:-1px;
+
     background-image: url(../img/intro-mask.svg);
     background-repeat: no-repeat;
     
 }
 
-.features{
-    background-color: firebrick;
-}
-.features-banner h3{
-    margin:0 380px;
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
+.features-banner{
+    background-color:#ffffff;
+    padding: 60px 0 52px 0;
+}
+.features-banner h3{
+    font-size: 21px ;
+    line-height: 26px;
+    margin:0 380px;
+}
 .features-list{
     margin: 30px 355px 0 356px;
     padding-bottom: 0px;
@@ -186,33 +209,28 @@ a:focus{
     font-weight: 400;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.features-1 {
+.features-1,
+.features-2{
     display: flex;
     flex-direction: row;
-
     padding:0px;
-    margin:0px;
+    margin: 0px;
+    background-color: #81b3d2;
 
-    background-color: #81b3d2; 
 }
-.features-1-text{    
+.features-1-text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    width: 280px;
+    margin: 26px 60px 34px;
+    text-align: center;
+
     color:#ffffff;
+    background-color: aquamarine;
 }
 .features-1-text h3{
-   
-}
-.features-1-text p{
-   
-}
-.features-1-text p:last-of-type{
-    
-}
-.features-1-image{
-
+    white-space: pre-line;
 }
 
 .advices-list{
@@ -223,11 +241,6 @@ a:focus{
     
 }
 
-.features-2 {
-    
-    
-    background-color: #81b3d2;
-}
 .features-2-text{  
     
 
