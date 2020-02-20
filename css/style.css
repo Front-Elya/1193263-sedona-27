@@ -1,7 +1,7 @@
 body{ 
     margin:0;
     padding: 0;
-    
+    box-sizing: border-box;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -90,7 +90,15 @@ a:focus{
 .features-list-end{
     list-style: none;
 }
-
+.sale-banner p:first-child{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.sale-banner p:last-child{
+    font-weight: 400;
+    line-height: 24px;
+}
 /*Стили разметки*/
 
 .visually-hidden{
@@ -109,6 +117,7 @@ a:focus{
 }
 
 .center-block{
+    position: relative;
     width: 1200px;
     margin: 0 auto;
     background-color:#ffffff;
@@ -116,23 +125,17 @@ a:focus{
 }
 
 .main-header{
-    width: 1200px;
-    height: 564px;
-
-    background-image: url(../img/background-photo.jpg);
-    background-position-y: -26px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    position: relative;
 }
 
 .main-navigation{
-    position: relative;
     width: inherit;
+    margin: 0px;
+    padding: 0px;
+    background-color: gold;
 }
 
 .site-navigation{
-    position: relative;
-
     margin: 0px;
     padding: 0px;
 
@@ -176,13 +179,20 @@ a:focus{
     position: absolute;
     left: 529px;
     top: 0px;
+    z-index: 999;
 }
 
 .banner{
+    width: 1200px;
+    height: 509px;
+
     margin:0px;
     padding: 0px;
     position: relative;
-    background-color: darkgoldenrod;
+    background-image: url(../img/background-photo.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .banner-welcome{
@@ -191,7 +201,7 @@ a:focus{
     
     position: absolute;
     left: 370px;
-    top: 76px;
+    top: 78px;
 
     background-image: url(../img/intro-welcome.svg);
     background-repeat: no-repeat;
@@ -216,7 +226,7 @@ a:focus{
 
 .features-banner{
     background-color: #ffffff;
-    padding: 60px 0 52px 0;
+    padding: 60px 0 50px 0;
 }
 .features-banner h3{
     width: 480px;
@@ -249,7 +259,9 @@ a:focus{
 .features-1-text h3,
 .features-2-text h3,
 .features-list-end h3,
-.features-list-end p{ 
+.features-list-end p,
+.sale-banner p,
+.features-2-text p{ 
     white-space: pre-line;
 }
 .features-1-text p,
@@ -261,7 +273,7 @@ a:focus{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: 30px 63px 56px 73px;
+    margin: 30px 63px 54px 73px;
     padding:0;
     
     background-color: #ffffff;
@@ -288,7 +300,7 @@ a:focus{
 .features-2-text{  
     box-sizing: border-box;
     width: 400px;
-    padding: 26px 40px 0px;
+    padding-top: 22px;
     text-align: center;
 
     color:#ffffff;
@@ -313,68 +325,92 @@ a:focus{
     padding:0;
 }
 .features-list-end p:first-of-type{
-    padding-top:26px;
-    padding-bottom: 22px;
+    padding-top:23px;
+    padding-bottom: 20px;
 }
 .features-list-end li{
     width:400px;
-    margin:48px 0px 60px;    
+    margin:48px 0px 58px;    
     box-sizing: border-box;
 }
 
 .sale-banner{
-    
-
+    text-align: center;
+    padding: 52px 0px 132px;
+    margin:0px;
 }
-.sale-banner p:first-child{
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
+.sale-banner p{
+    margin: 0px;
+    padding: 0px;
 }
-.sale-banner p:last-child{
-    font-weight: 400;
-    line-height: 24px;
+.sale-banner p:first-of-type{
+padding-bottom: 25px;
 }
 
 iframe{
+    margin: 0;
+    padding: 0;
     border: 0px;
-    box-shadow: 0px;
+    box-shadow: none;
 }
-footer{
 
-    background-color: #f2f2f2;
+footer{
+    box-sizing: border-box;
+    width:inherit;
+    position: absolute;
+    bottom: 0px;
+   
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
     opacity: 0.9;
+
+}
+
+.contacts{
+    justify-content: center;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    margin-left: 125px;
+    margin-right: 175px;
+}
+.contacts p{ 
+    text-align: left;
+    margin: 0px;
+}
+.contacts p:first-child{
+    padding-bottom: 5px;
 }
 .social{
-    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 225px;
 }
 .social-list {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+.social-list li{
+    width: 46px;
+    height: 48px;
+    margin: 0 3px 0;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .twitter{
-    width: 46px;
-    height: 48px;
     background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .facebook{
-    width: 46px;
-    height: 48px;
     background-image: url(../img/fb-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .youtube{
-    width: 46px;
-    height: 48px;
     background-image: url(../img/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .social-button{
     background-color: #81b3d2;
@@ -386,18 +422,15 @@ footer{
     background-color: #5496bd;
 }
 
-.contacts p{
-    text-align: left;
-}
-
 .creator{
-    width: 197px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .creator p:first-child{
+    padding-right: 5px;
     font-weight: 400;
 }
 
@@ -439,16 +472,15 @@ legend{
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    text-decoration: underline;
+    border-bottom: 1px dotted;
 }
-
 .hotels p{
     line-height: 21px;
     text-align: left;
 }
 
 a.button{
-    font-family: PT Sans;
+    font-family: "PT Sans";
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -457,6 +489,12 @@ a.button{
     color: #ffffff;
     vertical-align: middle;
     border: none;
+}
+
+.cost-block p{
+    color: #ffffff;
+    font-weight: 400;
+    margin:0;
 }
 
 a.button.detailed {
@@ -481,62 +519,78 @@ a.button.booked:focus{
 
 
 .catalog{
-    width:inherit;
+    width:1200px;
+}
+
+.filtration-form{
+    width: inherit;
+    height: 217px;
 
     background-image: url(../img/filter-background.jpg);
     background-color: #ffffff ;
     background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
 }
-.filtration-form{
-    width:inherit;
-}
-.filtration-form-hotel{
+
+.filtration-form-hotel {
     width: inherit;
-
+    padding:29px 72px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    box-sizing: border-box;
+}
+.filtration-form fieldset:last-child{
+    margin-left: auto;
 }
 
-.filtration-form-hotel-block1{
-    width: 345px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.filtration-form-hotel-block2{
-    width: 314px;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
 .infrastructure-block,
 .housing-block,
 .cost-block{
-    display: flex;
     border: none;
 }
-
-
-.container-catalog{
+.infrastructure-block,
+.housing-block{
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+.infrastructure-block{
+    margin-right: 120px;
 }
 
+.infrastructure-block label,
+.housing-block label{
+    margin:8px;
+}
+
+.cost-block span{
+    width: 314px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+.cost-block button{
+    margin-top: 70px;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    margin-left:95px;
+    margin-right: 90px;
+}
 
 .searching-headline{
     width:inherit;
-    padding:0;
-    margin: 0;
+    margin:10px 68px 9px 72px;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: baseline;
-
-    
+    box-sizing: border-box;
 }
 .sorting-searh{
     width: auto;
@@ -546,67 +600,88 @@ a.button.booked:focus{
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-
-    position: relative;
-    left:-220px;
-    
 }
 .sorting-searh p{
-    margin-left:30px;
+    margin-left:55px;
 
 }
 .sorting-list{
-    width:300px;
-
+    width:235px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.sorting-button{
-    position: relative;
-    right:-250px;
+.sorting-list li{
+
 }
 .sorting-button button{
     border:0;
     background-color: transparent;
 }
+
 .hotels{
     width:inherit;
-
     display: flex;
-    flex-direction: column;
-
-}
-.hotels div
-.hotels-info{
-    display:flex;
-    flex-direction: column;
-
-    margin-left: 20px;
-}
-.hotels-rating{
-    display:flex;
     flex-direction: column;
 }
 
 .hotels-1,
 .hotels-2,
 .hotels-3{
-    width: inherit;
-    padding:20px 50px;
-
+    height: 150px;
+    box-sizing: border-box;
+    padding: 30px 72px ;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #cacaca;
+}
+.hotels-3{
+    border-bottom:1px solid #cacaca;
+}
+.hotels-info{
+    width:250px;
+    height:90px;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.hotels-info div{
+    display:flex;
     flex-direction: row;
 }
 
-.footer-catalog{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.hotels-info div a{
+ margin-right: 10px;
+ padding:3px 15px;
+}
+.hotels-info div p:first-child{
+    margin-right: 38px;
+}
+.hotels-info p,
+.hotels-info h3{
+    margin:0;
+}
+.hotels-rating{
+    height: 90px;
+    display:flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
-
-    background-color: #ffffff;
+    margin-left: auto;
+    text-align: right;
+}
+.hotels-rating p{
+    width:110px;
+    min-height:27px;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0px;
+}
+.hotels::after{
+    content: "";
+    width:inherit;
+    height:128px;
 }
