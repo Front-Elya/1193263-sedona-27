@@ -520,7 +520,7 @@ input::-webkit-inner-spin-button {
 .search-form-main input[type="number"]::-webkit-inner-spin-button, 
 .search-form-main input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
-    margin: 0;
+    margin: 0px;
 }
 .button-minus, .button-plus{
     width:38px;
@@ -531,6 +531,7 @@ input::-webkit-inner-spin-button {
     top:-6px;
     text-align: center;
     background-color:#f2f2f2;
+    border: 0px;
     cursor: pointer;
 }
 .adults .button-minus{
